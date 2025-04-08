@@ -8,11 +8,11 @@ This repository contains automated tests for a web application using Playwright 
 
 #### Login
 - [ ] User authentication
--- [ ] Valid username and password logs in
--- [ ] Invalid username does not login
---- [ ] Validate error message
--- [ ] Valid username with invalid password does not login
---- [ ] Validate error message
+    - [ ] Valid username and password logs in
+    - [ ] Invalid username does not login
+        - [ ] Validate error message
+    - [ ] Valid username with invalid password does not login
+    - [ ] Validate error message
 - [ ] Login validation
 
 #### Products

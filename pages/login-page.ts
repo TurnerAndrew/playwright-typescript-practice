@@ -6,6 +6,7 @@ export class LoginPage {
     readonly passwordField: Locator;
     readonly loginButton: Locator;
     readonly error: Locator;
+    readonly pageTitle: Locator;
     readonly validUsernames: Array<string>;
     readonly validPassword: string;
     readonly invalidUsername: string;
@@ -17,7 +18,8 @@ export class LoginPage {
         this.usernameField = page.getByTestId('username');
         this.passwordField = page.getByTestId('password');
         this.loginButton = page.getByTestId('login-button');     
-        this.error = page.getByTestId('error');   
+        this.error = page.getByTestId('error');
+        this.pageTitle = page.getByText('Swag Labs', { exact: true});
         this.validUsernames = ['standard_user', 'locked_out_user', 'problem_user', 'performance_glitch_user', 'error_user', 'visual_user'];
         this.validPassword = 'secret_sauce';
         this.invalidUsername = 'bad_user';

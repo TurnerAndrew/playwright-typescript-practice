@@ -7,7 +7,7 @@ This repository contains automated tests for a web application using Playwright 
 ### MVP Test Coverage
 
 #### Login
-- [ ] User authentication
+- [x] User authentication
     - [x] Valid username and password logs in
     - [x] Invalid username does not login
         - [x] Validate error message
